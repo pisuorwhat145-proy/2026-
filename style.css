@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #ffb6c1, #ff4d6d);
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.screen {
+  display: none;
+  animation: fade 0.8s ease;
+}
+
+.screen.active {
+  display: block;
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+button {
+  background: #fff;
+  color: #ff4d6d;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 1em;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.buttons button {
+  display: inline-block;
+}
+
+.theme-cards div {
+  background: rgba(255,255,255,0.2);
+  margin: 10px;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.flirt {
+  font-size: 1.3em;
+  padding: 20px;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
