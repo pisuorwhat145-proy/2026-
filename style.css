@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #ffb6c1, #ff4d6d);
+  color: white;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "💖 💕 💗 💘 💝 🫀";
+  position: fixed;
+  inset: 0;
+  font-size: 60px;
+  opacity: 0.06;
+  text-align: center;
+  line-height: 120px;
+  pointer-events: none;
+}
+
+.wrapper {
+  max-width: 420px;
+  margin: auto;
+  padding: 25px 15px;
+}
+
+.screen {
+  display: none;
+  animation: fade 0.8s ease;
+}
+
+.screen.active {
+  display: block;
+}
+
+.card {
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 30px 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+button {
+  background: linear-gradient(135deg, #ff4d6d, #ff85a1);
+  color: white;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 40px;
+  font-size: 1em;
+  margin-top: 15px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(255,77,109,0.5);
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.06);
+}
+
+.btns button {
+  margin: 8px;
+}
+
+.themes div {
+  background: rgba(255,255,255,0.25);
+  padding: 14px;
+  border-radius: 18px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+#line {
+  font-size: 1.3em;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
